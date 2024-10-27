@@ -2,7 +2,7 @@
 ![View Count Badge](https://img.shields.io/badge/views-100%2B-brightgreen)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-nishantdecode-blue)](https://linkedin.com/in/nishantdecode)
 
-[![Demo Video](https://drive.google.com/file/d/1qbQcYym_oGKq5z_hi1fY_FsLg46I4fZC/view?usp=sharing)](https://drive.google.com/file/d/1U0OnmX2sftXwjKoXklbUEi2D8a2Sbd67/view)
+[![Demo Video](https://i.ibb.co/yShj5px/isleverse-Screenshot.jpg)](https://drive.google.com/file/d/1U0OnmX2sftXwjKoXklbUEi2D8a2Sbd67/view)
 
 IsleVerse is a real-time communication platform built with [Next.js](https://nextjs.org/), leveraging WebRTC, WebSockets, and peer-to-peer communication for seamless video calling. This project was bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and is designed for responsive and robust video interactions.
 
