@@ -1,4 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# IsleVerse - Video Communication Platform
+![View Count Badge](https://img.shields.io/badge/views-100%2B-brightgreen)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-nishantdecode-blue)](https://linkedin.com/in/nishantdecode)
+
+[Demo Video](https://github.com/nishantdecode/isleverse-fe/blob/main/public/isleVerse.mp4)
+
+IsleVerse is a real-time communication platform built with [Next.js](https://nextjs.org/), leveraging WebRTC, WebSockets, and peer-to-peer communication for seamless video calling. This project was bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and is designed for responsive and robust video interactions.
+
+## Project Structure and Key Technologies
+This application is structured with separate frontend and backend modules that connect through a WebSocket and API-based architecture. Here's a high-level overview of each:
+
+### Frontend - `isleverse-fe`
+Developed with Next.js and styled using Tailwind CSS, the frontend provides a responsive, real-time video and chat interface. The SocketProvider component handles WebSocket initialization, media stream access, and peer connection management. 
+
+#### Key Libraries and Technologies
+- **Next.js**: For server-side rendering and optimized builds.
+- **Tailwind CSS**: For responsive and consistent styling.
+- **Socket.io Client**: Facilitates WebSocket-based communication with the backend.
+- **Simple Peer**: Manages peer-to-peer communication for WebRTC.
+- **Radix UI**: Offers accessible and customizable components (avatars, dialogs, etc.).
+- **Framer Motion**: Adds animations for enhanced UI interactions.
+
+### Backend - [isleverse-be](https://github.com/nishantdecode/isleverse-be)
 
 ## Getting Started
 
