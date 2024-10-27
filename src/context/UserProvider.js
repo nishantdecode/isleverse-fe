@@ -26,7 +26,6 @@ const UserProvider = ({ children }) => {
     try {
       if (accessToken) {
         const response = await USER.verify();
-        console.log(response);
         if (response.data) {
           setUser({
             id: response.data._id,
@@ -35,7 +34,10 @@ const UserProvider = ({ children }) => {
             isAdmin: response.data.isAdmin,
             pic: response.data.pic,
           });
-          localStorage.setItem("accessToken", JSON.stringify(response.data.token));
+          localStorage.setItem(
+            "accessToken",
+            JSON.stringify(response.data.token)
+          );
         } else {
           throw response.error;
         }

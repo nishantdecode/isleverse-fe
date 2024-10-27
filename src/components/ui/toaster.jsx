@@ -21,11 +21,10 @@ export function Toaster() {
             <div className="grid gap-1">
               {title && <ToastTitle>{title}</ToastTitle>}
               {description && (
-                <ToastDescription>{description}</ToastDescription>
+                <ToastClose>{description}</ToastClose>
               )}
             </div>
             {action}
-            <ToastClose />
           </Toast>)
         );
       })}

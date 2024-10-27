@@ -37,15 +37,18 @@ export default function Page() {
         password,
         pic,
       });
-      if(response.data){
+      if (response.data) {
         setUser({
-            id : response.data._id,
-            name : response.data.name,
-            email : response.data.email,
-            isAdmin : response.data.isAdmin,
-            pic : response.data.pic
+          id: response.data._id,
+          name: response.data.name,
+          email: response.data.email,
+          isAdmin: response.data.isAdmin,
+          pic: response.data.pic,
         });
-        localStorage.setItem("accessToken", JSON.stringify(response.data.token));
+        localStorage.setItem(
+          "accessToken",
+          JSON.stringify(response.data.token)
+        );
         showToast("Registration Successful", "");
         setLoading(false);
         router.push("/");

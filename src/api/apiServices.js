@@ -86,18 +86,7 @@ const request = {
 };
 
 export const USER = {
-  register: (payload) => request.post(`${BASE_URL + "user/"}`, payload),
-  login: (payload) => request.post(`${BASE_URL + "user/login"}`, payload),
-  verify: () => request.get(`${BASE_URL + "user/verify"}`, headerData()),  // Attach the token
+  register: (payload) => request.post(`${BASE_URL + "/api/user/"}`, payload),
+  login: (payload) => request.post(`${BASE_URL + "/api/user/login"}`, payload),
+  verify: () => request.get(`${BASE_URL + "/api/user/verify"}`, headerData()),
 };
-
-// export const ADVERTISEMENTS = {
-//   add: (payload) => request.post(`${BASE_URL + "advertisements"}/`, payload),
-//   getAll: (query) => request.get(`${BASE_URL + "advertisements/get"}?${query}`),
-//   getById: (id) => request.get(`${BASE_URL + "advertisements"}/${id}`),
-//   getByTitle: (filterData) =>
-//     request.get(`${BASE_URL + "advertisements/title"}`, filterData),
-//   update: (id, payload) =>
-//     request.put(`${BASE_URL + "advertisements/update"}/${id}`, payload),
-//   delete: (id) => request.delete(`${BASE_URL + "advertisements/delete"}/${id}`),
-// };

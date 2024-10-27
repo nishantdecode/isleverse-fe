@@ -24,7 +24,6 @@ export function SignUpForm({
   password,
   setPassword,
   submitHandler,
-  loading,
   postDetails,
 }) {
   const [showPassword, setShowPassword] = useState(false);
@@ -124,7 +123,6 @@ export function SignUpForm({
             type="submit"
             className="w-full"
             onClick={submitHandler}
-            // isLoading={picLoading}
           >
             Sign Up
           </Button>

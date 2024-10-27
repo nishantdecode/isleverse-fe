@@ -26,9 +26,11 @@ export function AppBar() {
   const { theme } = useTheme();
   const { user, setUser } = useContext(UserContext);
 
-  const isAuthPage = ["login", "signup"].includes(pathname.split("/")[1])
-    ? true
-    : false;
+  const isAuthPage = ["login", "signup"].includes(pathname.split("/")[1]);
+  const noAppBarPage = ["call"].includes(pathname.split("/")[1]);
+
+  if (noAppBarPage) return null;
+
   return (
     <nav className="fixed inset-x-0 top-0 z-50 bg-white shadow-sm dark:bg-inherit">
       <div className="w-full max-w-7xl mx-auto px-2">
@@ -46,7 +48,10 @@ export function AppBar() {
               (user ? (
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button size="icon" className="rounded-full overflow-hidden">
+                    <Button
+                      size="icon"
+                      className="rounded-full overflow-hidden"
+                    >
                       <Image
                         src={user.pic || ""}
                         height={54}

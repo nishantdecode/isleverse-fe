@@ -20,7 +20,6 @@ export function LoginForm({
   password,
   setPassword,
   submitHandler,
-  loading,
 }) {
   const [showPassword, setShowPassword] = useState(false);
 
